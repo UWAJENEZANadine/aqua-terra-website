@@ -1,10 +1,13 @@
 import React from "react";
 import HomeLayout from "../components/homeLayout";
-
-import heroImage from "../assets/images/lake9.jpeg";
-import aboutImage from "../assets/images/swamp1.jpeg";
-import marineImage from "../assets/images/lake5.jpeg";
+import aboutImage from "../assets/images/lake5.jpeg";
+import SwampAbout from "../assets/images/swamp1.jpeg"
 import natureImage from "../assets/images/nature1.jpeg";
+import marineImage from "../assets/images/nature5.jpeg";
+import lakeConservation from "../assets/images/nature3.jpeg"
+import SwampHealthier from "../assets/images/lakes3.jpeg"
+import HelloHealthier from "../assets/images/lake9.jpeg"
+
 
 import "./home.css";
 
@@ -14,7 +17,7 @@ const conservationAreas = [
     title: "Marine Species Protection",
     description:
       "Promoting the protection of marine animals, plants, and the biodiversity that sustains ocean life.",
-    image: marineImage,
+    image: aboutImage,
     link: "/our-work#biodiversity-protection",
   },
   {
@@ -22,7 +25,7 @@ const conservationAreas = [
     title: "Aquatic Habitat Conservation",
     description:
       "Supporting the conservation of coral reefs, mangroves, rivers, lakes, and other important habitats.",
-    image: aboutImage,
+    image: natureImage,
     link: "/our-work#environmental-conservation",
   },
   {
@@ -30,7 +33,7 @@ const conservationAreas = [
     title: "Pollution Prevention",
     description:
       "Encouraging responsible practices that reduce waste and pollution entering aquatic environments.",
-    image: natureImage,
+    image: marineImage,
     link: "/our-work#environmental-conservation",
   },
   {
@@ -38,7 +41,7 @@ const conservationAreas = [
     title: "Education and Awareness",
     description:
       "Building environmental awareness and encouraging communities to take part in conservation.",
-    image: heroImage,
+    image: lakeConservation,
     link: "/our-work#ecosystem-restoration",
   },
 ];
@@ -49,7 +52,7 @@ const Home = () => {
         {/* HERO */}
         <section
           className="home-hero"
-          style={{ backgroundImage: `url(${heroImage})` }}
+          style={{ backgroundImage: `url(${HelloHealthier})` }}
         >
           <div className="home-hero-overlay">
             <div className="home-hero-content">
@@ -93,7 +96,7 @@ const Home = () => {
         {/* INTRODUCTION */}
         <section className="home-introduction">
           <div className="intro-image-wrap">
-            <img src={aboutImage} alt="Natural aquatic ecosystem" />
+            <img src={SwampAbout} alt="Natural aquatic ecosystem" />
             <div className="intro-image-label">
               <span>OUR PLANET</span>
               <strong>Nature connects us all.</strong>
@@ -161,7 +164,7 @@ const Home = () => {
         <section className="home-impact-section">
           <div className="impact-image">
             <img
-              src={natureImage}
+              src={SwampHealthier}
               alt="Natural environment and aquatic habitat"
             />
           </div>
