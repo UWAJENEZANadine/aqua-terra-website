@@ -104,7 +104,7 @@
   cursor: pointer;
   padding: 7px 3px;
   font-size: 10px;
-  transition: transform 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .nav-dropdown:hover .dropdown-toggle,
@@ -112,7 +112,13 @@
   color: #B8E58E;
 }
 
-.nav-dropdown.dropdown-open .dropdown-toggle {
+.dropdown-arrow {
+  display: inline-block;
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.nav-dropdown.dropdown-open .dropdown-arrow {
   transform: rotate(180deg);
 }
 
@@ -158,8 +164,11 @@
   border: none;
   background: transparent;
   color: var(--white);
-  font-size: 25px;
+  font-size: 30px;
+  font-weight: 400;
   cursor: pointer;
+  padding: 8px 12px;
+  line-height: 1;
 }
 
 /* TABLET AND SMALL DESKTOP */
@@ -198,6 +207,7 @@
 
   .header-inner {
     width: 92%;
+    position: relative;
   }
 
   .brand-logo img {
@@ -208,14 +218,15 @@
   .menu-toggle {
     display: block;
     margin-left: auto;
+    z-index: 1002;
   }
 
   .nav-container {
     display: none;
     position: absolute;
-    top: 85px;
-    left: 0;
-    width: 100%;
+    top: 100%;
+    left: -4.35%;
+    width: 108.7%;
     max-height: calc(100vh - 85px);
     overflow-y: auto;
     background-color: var(--primary-green);
@@ -225,6 +236,7 @@
     gap: 0;
     padding: 10px 5% 20px;
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
   }
 
   .nav-container.active {
@@ -256,12 +268,13 @@
 
   .dropdown-toggle {
     padding: 15px;
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .dropdown-menu {
     display: none;
     position: static;
+    width: 100%;
     min-width: 100%;
     margin: 0;
     padding: 0 0 8px 12px;
@@ -280,6 +293,7 @@
   }
 
   .dropdown-menu a {
+    display: block;
     color: #FFFFFF;
     padding: 12px 15px;
     font-size: 14px;
@@ -305,6 +319,6 @@
   }
 
   .menu-toggle {
-    font-size: 23px;
+    font-size: 27px;
   }
 }

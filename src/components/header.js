@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import logo from "../assets/images/logo.png";
 import "./header.css";
@@ -13,14 +12,12 @@ const Header = () => {
   };
 
   const toggleDropdown = (name) => {
-    setOpenDropdown(openDropdown === name ? null : name);
+    setOpenDropdown((current) => (current === name ? null : name));
   };
 
   const renderDropdown = (name, label, href, items) => (
     <div
-      className={`nav-dropdown ${
-        openDropdown === name ? "dropdown-open" : ""
-      }`}
+      className={`nav-dropdown ${openDropdown === name ? "dropdown-open" : ""}`}
       key={name}
     >
       <div className="nav-dropdown-heading">
@@ -34,9 +31,7 @@ const Header = () => {
           aria-label={`Toggle ${label} submenu`}
           aria-expanded={openDropdown === name}
           onClick={() => toggleDropdown(name)}
-        >
-          <i className="fas fa-chevron-down"></i>
-        </button>
+        ></button>
       </div>
 
       <div className="dropdown-menu">
@@ -52,13 +47,9 @@ const Header = () => {
   return (
     <header className="main-header">
       <div className="header-inner">
-
         {/* Organization Logo */}
         <a href="/" className="brand-logo" onClick={closeMenu}>
-          <img
-            src={logo}
-            alt="Aqua Terra Conservation Initiative"
-          />
+          <img src={logo} alt="Aqua Terra Conservation Initiative" />
         </a>
 
         {/* Mobile Menu Button */}
@@ -66,18 +57,22 @@ const Header = () => {
           type="button"
           className="menu-toggle"
           onClick={() => {
-            setMenuOpen(!menuOpen);
+            setMenuOpen((current) => !current);
             setOpenDropdown(null);
           }}
-          aria-label="Toggle navigation menu"
+          aria-label={
+            menuOpen ? "Close navigation menu" : "Open navigation menu"
+          }
           aria-expanded={menuOpen}
         >
-          <i className={`fas ${menuOpen ? "fa-times" : "fa-bars"}`}></i>
+          {menuOpen ? "×" : "☰"}
         </button>
 
         {/* Main Navigation */}
-        <nav className={`nav-container ${menuOpen ? "active" : ""}`}>
-
+        <nav
+          className={`nav-container ${menuOpen ? "active" : ""}`}
+          aria-label="Main navigation"
+        >
           <a href="/" onClick={closeMenu} className="nav-link">
             Home
           </a>
@@ -103,7 +98,6 @@ const Header = () => {
             },
           ])}
 
-
           {renderDropdown("news", "News & Publications", "/news", [
             { label: "Latest News", href: "/news#latest-news" },
             { label: "Publications", href: "/news#publications" },
@@ -114,7 +108,6 @@ const Header = () => {
             { label: "Become a Partner", href: "/get-involved#partner" },
             { label: "Donate", href: "/get-involved#donate" },
           ])}
-
         </nav>
       </div>
     </header>
