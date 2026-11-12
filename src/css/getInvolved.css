@@ -1,0 +1,367 @@
+
+/* GENERAL */
+.get-involved-page {
+  width: 100%;
+  overflow: hidden;
+  color: #183D28;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.involved-eyebrow {
+  display: inline-block;
+  color: #159438;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+/* HERO */
+.involved-hero {
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  padding: 80px 9%;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(3, 45, 27, 0.92),
+      rgba(3, 45, 27, 0.35)
+    ),
+    url("../assets/images/lake1.jpeg") center/cover no-repeat;
+}
+
+.involved-hero-content {
+  max-width: 680px;
+  color: #FFFFFF;
+}
+
+.involved-hero .involved-eyebrow {
+  color: #A7DF79;
+}
+
+.involved-hero h1 {
+  font-size: clamp(38px, 5vw, 55px);
+  line-height: 1.2;
+  margin: 18px 0;
+}
+
+.involved-hero p {
+  max-width: 590px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 28px;
+}
+
+.involved-hero-button,
+.donate-button,
+.involved-closing a {
+  display: inline-block;
+  padding: 14px 27px;
+  background: #70B82D;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 3px;
+  transition: background 0.3s ease;
+}
+
+.involved-hero-button:hover,
+.donate-button:hover,
+.involved-closing a:hover {
+  background: #159438;
+  color: #FFFFFF;
+}
+
+/* INTRODUCTION */
+.involved-intro {
+  max-width: 850px;
+  margin: auto;
+  padding: 85px 8%;
+  text-align: center;
+}
+
+.involved-intro h2 {
+  color: #075B28;
+  font-size: 36px;
+  line-height: 1.3;
+  margin: 12px 0 18px;
+}
+
+.involved-intro p {
+  color: #53665A;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+/* VOLUNTEER AND PARTNER */
+.involved-option {
+  display: grid;
+  grid-template-columns: 1fr 0.85fr;
+  gap: 65px;
+  align-items: center;
+  padding: 90px 9%;
+  scroll-margin-top: 100px;
+}
+
+.volunteer-section {
+  background: #F3F8F2;
+}
+
+.partner-section {
+  background: #FFFFFF;
+}
+
+.involved-option-content {
+  max-width: 650px;
+}
+
+.involved-option-content h2 {
+  color: #075B28;
+  font-size: 36px;
+  line-height: 1.3;
+  margin: 12px 0 20px;
+}
+
+.involved-option-content p {
+  color: #53665A;
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 16px;
+}
+
+.involved-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: #075B28;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 2px solid #70B82D;
+  padding-bottom: 6px;
+  transition: color 0.3s ease;
+}
+
+.involved-link:hover {
+  color: #159438;
+}
+
+/* VOLUNTEER AND PARTNERSHIP VISUAL PANELS */
+.involved-option-visual {
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 35px;
+  color: #FFFFFF;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  isolation: isolate;
+}
+
+.involved-option-visual::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(3, 35, 20, 0.88),
+    rgba(3, 35, 20, 0.05)
+  );
+  z-index: -1;
+}
+
+.volunteer-visual {
+  background-image: url("../assets/images/nature5.jpeg");
+}
+
+.partner-visual {
+  background-image: url("../assets/images/swamp1.jpeg");
+}
+
+.involved-option-visual span {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #A7DF79;
+  margin-bottom: 12px;
+}
+
+.involved-option-visual p {
+  max-width: 350px;
+  font-size: 22px;
+  line-height: 1.4;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* PARTNER SECTION: REVERSED LAYOUT */
+.partner-section {
+  grid-template-columns: 0.85fr 1fr;
+}
+
+.partner-section .partner-visual {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.partner-section .involved-option-content {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+/* DONATIONS */
+.donate-section {
+  padding: 95px 9%;
+  background: #075B28;
+  scroll-margin-top: 100px;
+}
+
+.donate-content {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.donate-content .involved-eyebrow {
+  color: #A7DF79;
+}
+
+.donate-content h2 {
+  color: #FFFFFF;
+  font-size: 38px;
+  line-height: 1.3;
+  margin: 15px 0 20px;
+}
+
+.donate-content p {
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 28px;
+}
+
+.donate-button {
+  background: #FFFFFF;
+  color: #075B28;
+}
+
+.donate-button:hover {
+  background: #70B82D;
+  color: #FFFFFF;
+}
+
+/* CLOSING CTA */
+.involved-closing {
+  padding: 85px 8%;
+  text-align: center;
+  color: #FFFFFF;
+  background: linear-gradient(110deg, #06451F, #075B28, #087C75);
+}
+
+.involved-closing .involved-eyebrow {
+  color: #A7DF79;
+}
+
+.involved-closing h2 {
+  font-size: 36px;
+  line-height: 1.3;
+  margin: 15px 0;
+}
+
+.involved-closing p {
+  max-width: 650px;
+  margin: 0 auto 28px;
+  font-size: 15px;
+  line-height: 1.9;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+/* TABLETS */
+@media screen and (max-width: 992px) {
+  .involved-option {
+    gap: 35px;
+    padding: 75px 7%;
+  }
+
+  .involved-option-content h2 {
+    font-size: 31px;
+  }
+
+  .involved-option-visual {
+    min-height: 300px;
+  }
+}
+
+/* MOBILE */
+@media screen and (max-width: 700px) {
+  .involved-hero {
+    min-height: 430px;
+    padding: 60px 7%;
+  }
+
+  .involved-hero h1 {
+    font-size: 35px;
+  }
+
+  .involved-intro {
+    padding: 65px 7%;
+  }
+
+  .involved-intro h2 {
+    font-size: 29px;
+  }
+
+  .involved-option,
+  .partner-section {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 65px 7%;
+  }
+
+  .partner-section .partner-visual,
+  .partner-section .involved-option-content {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .partner-section .partner-visual {
+    order: 2;
+  }
+
+  .partner-section .involved-option-content {
+    order: 1;
+  }
+
+  .involved-option-content h2 {
+    font-size: 29px;
+  }
+
+  .involved-option-visual {
+    min-height: 280px;
+    padding: 25px;
+  }
+
+  .involved-option-visual p {
+    font-size: 20px;
+  }
+
+  .donate-section {
+    padding: 70px 7%;
+  }
+
+  .donate-content h2 {
+    font-size: 30px;
+  }
+
+  .involved-closing {
+    padding: 65px 7%;
+  }
+
+  .involved-closing h2 {
+    font-size: 29px;
+  }
+}

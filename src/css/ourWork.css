@@ -1,0 +1,237 @@
+
+.our-work-page {
+  color: #183D28;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.work-hero {
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  padding: 70px 8%;
+  background: linear-gradient(90deg, rgba(3, 45, 27, 0.9), rgba(3, 45, 27, 0.35)),
+    url("../assets/images/lake1.jpeg") center/cover no-repeat;
+}
+
+.work-hero-content {
+  max-width: 650px;
+  color: #fff;
+}
+
+.work-hero-content span,
+.work-label {
+  color: #70B82D;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.work-hero-content h1 {
+  font-size: 46px;
+  line-height: 1.2;
+  margin: 18px 0;
+}
+
+.work-hero-content p {
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+/* OUR WORK DROPDOWN NAVIGATION */
+#environmental-conservation,
+#biodiversity-protection,
+#ecosystem-restoration {
+  scroll-margin-top: 120px;
+}
+
+.work-hero-btn,
+.marine-feature-btn,
+.work-cta a {
+  display: inline-block;
+  padding: 13px 25px;
+  background: #70B82D;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.work-hero-btn:hover,
+.marine-feature-btn:hover,
+.work-cta a:hover {
+  background: #159438;
+}
+
+.work-intro {
+  padding: 80px 8%;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 55px;
+  align-items: center;
+}
+
+.work-intro-text h2,
+.work-section-heading h2 {
+  font-size: 34px;
+  line-height: 1.3;
+  margin: 15px 0 20px;
+}
+
+.work-intro-text p,
+.work-intro-highlight p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #53665A;
+  margin-bottom: 15px;
+}
+
+.work-intro-highlight {
+  background: #F3F8F2;
+  padding: 35px;
+  border-left: 5px solid #159438;
+}
+
+.work-intro-highlight h3 {
+  color: #075B28;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+
+.work-focus {
+  padding: 75px 8%;
+  background: #F3F8F2;
+}
+
+.work-section-heading {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 45px;
+}
+
+.work-section-heading p {
+  color: #53665A;
+  line-height: 1.7;
+}
+
+.work-focus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.work-focus-card {
+  background: #fff;
+  padding: 32px 27px;
+  border-radius: 6px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+  scroll-margin-top: 120px;
+}
+
+.work-card-number {
+  color: #159438;
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.work-focus-card h3 {
+  color: #075B28;
+  font-size: 21px;
+  margin-bottom: 15px;
+}
+
+.work-focus-card p {
+  color: #53665A;
+  line-height: 1.8;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.work-focus-card a {
+  color: #159438;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.work-focus-card a:hover {
+  color: #075B28;
+}
+
+.marine-feature {
+  padding: 85px 8%;
+  background: linear-gradient(90deg, #075B28, #087C75);
+  color: #fff;
+}
+
+.marine-feature-content {
+  max-width: 750px;
+}
+
+.marine-feature h2 {
+  font-size: 35px;
+  margin: 17px 0;
+}
+
+.marine-feature p {
+  line-height: 1.8;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+.work-cta {
+  text-align: center;
+  padding: 75px 20px;
+}
+
+.work-cta h2 {
+  color: #075B28;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.work-cta p {
+  color: #53665A;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 900px) {
+  .work-intro {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .work-focus-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .work-hero {
+    min-height: 380px;
+    padding: 55px 7%;
+  }
+
+  .work-hero-content h1 {
+    font-size: 34px;
+  }
+
+  .work-intro,
+  .work-focus {
+    padding: 55px 7%;
+  }
+
+  .work-intro-text h2,
+  .work-section-heading h2,
+  .marine-feature h2 {
+    font-size: 28px;
+  }
+
+  .work-focus-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .marine-feature {
+    padding: 60px 7%;
+  }
+}

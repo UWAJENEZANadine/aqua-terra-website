@@ -1,0 +1,291 @@
+
+.conservation-page {
+  width: 100%;
+  color: #183D28;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.conservation-eyebrow {
+  display: inline-block;
+  color: #159438;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.conservation-heading {
+  max-width: 760px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.conservation-heading h2 {
+  color: #075B28;
+  font-size: 34px;
+  margin: 0 0 18px;
+}
+
+.conservation-heading p {
+  color: #64746A;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* HERO */
+
+.conservation-hero {
+  min-height: 530px;
+  display: flex;
+  align-items: center;
+  padding: 70px 8%;
+  background:
+    linear-gradient(90deg, rgba(3, 42, 34, 0.9),
+    rgba(3, 42, 34, 0.35)),
+    linear-gradient(135deg, #075B28, #168CCB);
+}
+
+.conservation-hero-content {
+  max-width: 680px;
+  color: #FFFFFF;
+}
+
+.conservation-hero-content .conservation-eyebrow {
+  color: #A9D875;
+}
+
+.conservation-hero-content h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 22px;
+}
+
+.conservation-hero-content p {
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.conservation-button {
+  display: inline-block;
+  background: #159438;
+  color: #FFFFFF;
+  padding: 14px 28px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.conservation-button:hover {
+  background: #70B82D;
+  color: #FFFFFF;
+}
+
+/* INTRODUCTION */
+
+.conservation-intro {
+  padding: 85px 8%;
+  background: #FFFFFF;
+}
+
+/* PRIORITIES */
+
+.conservation-priorities {
+  padding: 85px 8%;
+  background: #F3F8F2;
+}
+
+.priority-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.priority-card {
+  background: #FFFFFF;
+  padding: 32px 25px;
+  border-radius: 8px;
+  border-bottom: 4px solid #168CCB;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.priority-card:hover {
+  transform: translateY(-6px);
+}
+
+.priority-icon {
+  font-size: 35px;
+  margin-bottom: 18px;
+}
+
+.priority-card h3 {
+  color: #075B28;
+  font-size: 19px;
+  margin-bottom: 14px;
+}
+
+.priority-card p {
+  color: #64746A;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* CHALLENGES */
+
+.conservation-challenges {
+  padding: 85px 8%;
+  background: #FFFFFF;
+}
+
+.challenge-list {
+  max-width: 900px;
+  margin: auto;
+}
+
+.challenge-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  padding: 25px 10px;
+  border-bottom: 1px solid #DCE8DD;
+}
+
+.challenge-item > span {
+  color: #168CCB;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.challenge-item h3 {
+  color: #075B28;
+  font-size: 19px;
+  margin: 0 0 10px;
+}
+
+.challenge-item p {
+  color: #64746A;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* APPROACH */
+
+.conservation-approach {
+  padding: 85px 8%;
+  background: #F3F8F2;
+}
+
+.approach-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.approach-grid article {
+  background: #FFFFFF;
+  padding: 28px 22px;
+  border-radius: 8px;
+  border-top: 4px solid #70B82D;
+}
+
+.approach-grid h3 {
+  color: #075B28;
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+.approach-grid p {
+  color: #64746A;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* CALL TO ACTION */
+
+.conservation-cta {
+  padding: 85px 8%;
+  text-align: center;
+  background: #075B28;
+  color: #FFFFFF;
+}
+
+.conservation-cta h2 {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.conservation-cta p {
+  max-width: 720px;
+  margin: 0 auto 30px;
+  color: #E4F1E6;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.conservation-cta .conservation-button {
+  background: #70B82D;
+}
+
+.conservation-cta .conservation-button:hover {
+  background: #FFFFFF;
+  color: #075B28;
+}
+
+/* TABLET */
+
+@media (max-width: 992px) {
+  .priority-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .approach-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .conservation-hero-content h1 {
+    font-size: 40px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 576px) {
+  .conservation-hero {
+    min-height: 460px;
+    padding: 50px 6%;
+  }
+
+  .conservation-hero-content h1 {
+    font-size: 32px;
+  }
+
+  .conservation-hero-content p {
+    font-size: 15px;
+  }
+
+  .conservation-intro,
+  .conservation-priorities,
+  .conservation-challenges,
+  .conservation-approach,
+  .conservation-cta {
+    padding: 60px 6%;
+  }
+
+  .conservation-heading h2,
+  .conservation-cta h2 {
+    font-size: 27px;
+  }
+
+  .priority-grid,
+  .approach-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .challenge-item {
+    gap: 15px;
+  }
+}

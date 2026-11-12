@@ -1,0 +1,26 @@
+
+/* =====================================
+   WEBSITE LAYOUT
+===================================== */
+
+.website-layout {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.home-container {
+  width: 100%;
+  flex: 1;
+  min-height: 100vh;
+  background-color: #FFFFFF;
+}
+
+/* Prevent horizontal scrolling */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}

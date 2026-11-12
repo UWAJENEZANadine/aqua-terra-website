@@ -1,0 +1,541 @@
+
+/* GENERAL */
+.about-page {
+  width: 100%;
+  overflow: hidden;
+  color: #183d28;
+}
+
+.about-eyebrow {
+  display: inline-block;
+  color: #159438;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+/* HERO */
+.about-hero {
+  min-height: 540px;
+  background-size: cover;
+  background-position: center;
+}
+
+.about-hero-overlay {
+  min-height: 540px;
+  display: flex;
+  align-items: center;
+  padding: 80px 9%;
+  background: linear-gradient(
+    90deg,
+    rgba(3, 35, 20, 0.88) 0%,
+    rgba(3, 35, 20, 0.65) 50%,
+    rgba(3, 35, 20, 0.12) 100%
+  );
+}
+
+.about-hero-content {
+  max-width: 680px;
+  color: #ffffff;
+}
+
+.about-hero-content .about-eyebrow {
+  color: #a7df79;
+}
+
+.about-hero-content h1 {
+  font-size: clamp(38px, 5vw, 58px);
+  line-height: 1.15;
+  margin-bottom: 22px;
+  font-weight: 700;
+}
+
+.about-hero-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 580px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 30px;
+}
+
+.about-hero-button,
+.about-commitment-button {
+  display: inline-block;
+  padding: 14px 27px;
+  background: #70b82d;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.about-hero-button:hover,
+.about-commitment-button:hover {
+  background: #159438;
+  color: #ffffff;
+}
+
+/* OUR PERSPECTIVE */
+.about-perspective {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 70px;
+  padding: 100px 9%;
+  background: #ffffff;
+}
+
+.perspective-content h2 {
+  max-width: 550px;
+  color: #075b28;
+  font-size: 42px;
+  line-height: 1.25;
+  margin-bottom: 25px;
+}
+
+.perspective-content h2 span {
+  display: block;
+  color: #168ccb;
+}
+
+.perspective-content p {
+  color: #68776c;
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+.perspective-visual {
+  position: relative;
+  height: 430px;
+}
+
+.perspective-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.perspective-image-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 85%;
+  padding: 25px 30px;
+  background: #075b28;
+  color: #ffffff;
+}
+
+.perspective-image-caption span {
+  display: block;
+  color: #a7df79;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.perspective-image-caption h3 {
+  font-size: 21px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* SHARED SECTION HEADING */
+.about-section-heading {
+  max-width: 680px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.about-section-heading h2 {
+  color: #075b28;
+  font-size: 36px;
+  line-height: 1.25;
+  margin-bottom: 15px;
+}
+
+.about-section-heading p {
+  color: #68776c;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* MISSION AND VISION */
+.mission-vision-section {
+  padding: 95px 9%;
+  background: #f3f8f2;
+}
+
+.mission-vision-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.mission-card,
+.vision-card {
+  position: relative;
+  min-height: 310px;
+  padding: 55px 45px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.mission-card {
+  background: #075b28;
+  color: #ffffff;
+}
+
+.vision-card {
+  background: #e1f0f4;
+  color: #183d28;
+}
+
+.mission-card::after,
+.vision-card::after {
+  position: absolute;
+  right: -15px;
+  bottom: -55px;
+  font-size: 110px;
+  font-weight: 800;
+  line-height: 1;
+  opacity: 0.07;
+  pointer-events: none;
+}
+
+.mission-card::after {
+  content: "PURPOSE";
+  color: #ffffff;
+}
+
+.vision-card::after {
+  content: "FUTURE";
+  color: #075b28;
+}
+
+.mission-card-content {
+  position: relative;
+  z-index: 1;
+  max-width: 460px;
+}
+
+.mission-label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+.mission-card h3,
+.vision-card h3 {
+  font-size: 30px;
+  margin-bottom: 18px;
+}
+
+.mission-card p,
+.vision-card p {
+  font-size: 15px;
+  line-height: 1.9;
+  margin: 0;
+}
+
+.mission-card p {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.vision-card p {
+  color: #52685a;
+}
+
+/* OBJECTIVES */
+.objectives-section {
+  padding: 100px 9%;
+  background: #ffffff;
+}
+
+.objectives-heading {
+  margin-bottom: 45px;
+}
+
+.objectives-list {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.objective-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 45px;
+  padding: 32px 30px;
+  border-bottom: 1px solid #e2eae3;
+  border-left: 4px solid #70b82d;
+  transition: background 0.3s ease, padding 0.3s ease;
+}
+
+.objective-card:nth-child(even) {
+  border-left-color: #168ccb;
+}
+
+.objective-card:hover {
+  background: #f5f9f4;
+  padding-left: 40px;
+}
+
+.objective-title span {
+  display: block;
+  color: #159438;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  margin-bottom: 10px;
+}
+
+.objective-title h3 {
+  color: #075b28;
+  font-size: 21px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.objective-card p {
+  color: #68776c;
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* CORE VALUES */
+.values-section {
+  padding: 100px 9%;
+  background: #f3f8f2;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.value-card {
+  position: relative;
+  min-height: 300px;
+  padding: 35px 25px;
+  background: #ffffff;
+  border-bottom: 4px solid #70b82d;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 30px rgba(7, 91, 40, 0.09);
+}
+
+.value-sustainability {
+  border-bottom-color: #168ccb;
+}
+
+.value-collaboration {
+  border-bottom-color: #159438;
+}
+
+.value-education {
+  border-bottom-color: #9aaf45;
+}
+
+.value-word {
+  display: block;
+  color: #dceadd;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 48px;
+}
+
+.value-card h3 {
+  color: #075b28;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.value-card p {
+  color: #68776c;
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* COMMITMENT */
+.about-commitment {
+  padding: 95px 9%;
+  background: linear-gradient(
+    120deg,
+    #06451f,
+    #075b28 65%,
+    #0c7040
+  );
+  text-align: center;
+}
+
+.commitment-content {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.commitment-content .about-eyebrow {
+  color: #a7df79;
+}
+
+.commitment-content h2 {
+  color: #ffffff;
+  font-size: 38px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.commitment-content p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 30px;
+}
+
+.about-commitment-button {
+  background: #ffffff;
+  color: #075b28;
+}
+
+.about-commitment-button:hover {
+  background: #70b82d;
+  color: #ffffff;
+}
+
+/* TABLETS */
+@media (max-width: 992px) {
+  .about-perspective {
+    gap: 35px;
+    padding: 80px 7%;
+  }
+
+  .perspective-content h2 {
+    font-size: 34px;
+  }
+
+  .mission-vision-section,
+  .objectives-section,
+  .values-section {
+    padding: 80px 7%;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mission-card,
+  .vision-card {
+    padding: 40px 30px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 650px) {
+  .about-hero,
+  .about-hero-overlay {
+    min-height: 500px;
+  }
+
+  .about-hero-overlay {
+    padding: 65px 7%;
+    background: rgba(3, 35, 20, 0.72);
+  }
+
+  .about-hero-content h1 {
+    font-size: 36px;
+  }
+
+  .about-perspective {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 65px 7%;
+  }
+
+  .perspective-content h2 {
+    font-size: 31px;
+  }
+
+  .perspective-visual {
+    height: 320px;
+  }
+
+  .perspective-image-caption {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .mission-vision-section,
+  .objectives-section,
+  .values-section {
+    padding: 70px 7%;
+  }
+
+  .about-section-heading {
+    margin-bottom: 35px;
+  }
+
+  .about-section-heading h2 {
+    font-size: 29px;
+  }
+
+  .mission-vision-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-card,
+  .vision-card {
+    min-height: 280px;
+    padding: 35px 25px;
+  }
+
+  .objective-card {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 25px 20px;
+  }
+
+  .objective-card:hover {
+    padding-left: 25px;
+  }
+
+  .objective-title h3 {
+    font-size: 19px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .value-card {
+    min-height: 230px;
+  }
+
+  .value-word {
+    margin-bottom: 30px;
+  }
+
+  .about-commitment {
+    padding: 70px 7%;
+  }
+
+  .commitment-content h2 {
+    font-size: 30px;
+  }
+}
