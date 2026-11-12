@@ -1,7 +1,6 @@
 import React from "react";
 import HomeLayout from "../components/homeLayout";
 import lakeImage from "../assets/images/lake1.jpeg";
-import heroImage from "../assets/images/lake5.jpeg";
 import "../css/aboutUs.css";
 
 const AboutUs = () => {

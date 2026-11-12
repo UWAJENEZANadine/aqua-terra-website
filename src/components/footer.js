@@ -4,8 +4,6 @@ import logo from "../assets/images/logo.png";
 import {
   faEnvelope,
   faPhone,
-  faFacebookF,
-  faLinkedinIn,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./footer.css";
