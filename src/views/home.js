@@ -43,34 +43,6 @@ const conservationAreas = [
     link: "/our-work#ecosystem-restoration",
   },
 ];
-
-const threats = [
-  {
-    number: "01",
-    title: "Ocean Pollution",
-    description:
-      "Plastic waste, chemicals, and other pollutants can harm marine species and damage ocean habitats.",
-  },
-  {
-    number: "02",
-    title: "Overfishing",
-    description:
-      "Unsustainable fishing practices can reduce marine populations and disturb ecosystem balance.",
-  },
-  {
-    number: "03",
-    title: "Habitat Destruction",
-    description:
-      "Damage to coral reefs, mangroves, and other habitats threatens the places where aquatic life survives.",
-  },
-  {
-    number: "04",
-    title: "Climate Change",
-    description:
-      "Rising ocean temperatures and changing environmental conditions put pressure on aquatic ecosystems.",
-  },
-];
-
 const Home = () => {
   return (
     <HomeLayout>
