@@ -6,7 +6,6 @@ import aboutImage from "../assets/images/swamp1.jpeg";
 import marineImage from "../assets/images/lake5.jpeg";
 import natureImage from "../assets/images/nature1.jpeg";
 
-
 import "./home.css";
 
 const conservationAreas = [
@@ -90,7 +89,6 @@ const Home = () => {
             </div>
           </div>
         </section>
-        
 
         {/* INTRODUCTION */}
         <section className="home-introduction">
@@ -209,7 +207,7 @@ const Home = () => {
             </a>
           </div>
         </section>
-        
+
         {/* OUR APPROACH */}
         <section className="home-approach-section">
           <div className="approach-heading">
